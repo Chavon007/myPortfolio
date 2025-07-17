@@ -1,0 +1,34 @@
+.projects {
+  padding-top: 80px;
+  height: auto;
+  padding-bottom: 40px;
+}
+.project-content {
+  width: 90%;
+  margin: 0 auto;
+}
+.project-content-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+.project-content-header h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Libertinus Mono", monospace;
+  font-weight: bold;
+  color: #34b7a7;
+}
+.project-content-header p {
+  font-size: 15px;
+  font-family: "poppins", sans-serif;
+  font-weight: 100;
+  color: #5d5d5c;
+  letter-spacing: 1;
+  margin-top: 10px;
+}
+.mainprojectcard {
+  margin-top: 40px;
+}

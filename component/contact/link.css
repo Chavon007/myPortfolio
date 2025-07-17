@@ -1,0 +1,30 @@
+.links {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+.links h3 {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(173, 220, 210, 0.5);
+}
+
+.links h3 small {
+  background: #a5ded7;
+  padding: 10px;
+  border-radius: 50px;
+  color: #5d5d5c;
+  font-size: 20px;
+}
+.links h3 span {
+  padding-left: 40px;
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+  cursor: pointer;
+  color: #5d5d5c;
+}
+.links h3 span:hover {
+  color: #8edad1;
+}

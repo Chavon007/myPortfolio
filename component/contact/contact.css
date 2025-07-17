@@ -1,0 +1,144 @@
+.contact {
+  padding-top: 80px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+}
+.contact-content {
+  width: 90%;
+  margin: 0 auto;
+}
+.contact-content-header {
+  max-width: 300px;
+
+  text-align: center;
+  margin: 10px auto;
+}
+.contact-content-header h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Libertinus Mono", monospace;
+  font-weight: bold;
+  color: #34b7a7;
+}
+.contact-content-header p {
+  font-size: 15px;
+  font-family: "poppins", sans-serif;
+  font-weight: 100;
+  color: #5d5d5c;
+  letter-spacing: 1;
+  margin-top: 10px;
+}
+.contact1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 50px;
+}
+.contact-content-link {
+  border: none;
+  width: 20%;
+}
+
+.contact-content-form {
+  box-shadow: 0 0 10px rgba(173, 220, 210, 0.5);
+  border-radius: 20px;
+  border: none;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 20px auto;
+  gap: 10px;
+}
+.name input {
+  box-shadow: 0 0 10px rgba(173, 220, 210, 0.5);
+  border: none;
+  border-radius: 10px;
+  width: 400px;
+  padding: 8px;
+}
+.name input::placeholder {
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+  color: #5d5d5c;
+  border: none;
+}
+.name input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.subject {
+  width: 90%;
+  box-shadow: 0 0 10px rgba(173, 220, 210, 0.5);
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.subject::placeholder {
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+  color: #5d5d5c;
+  border: none;
+}
+.subject:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+textarea {
+  width: 90%;
+  height: 300px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px rgba(173, 220, 210, 0.5);
+}
+textarea::placeholder {
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  color: #5d5d5c;
+  border: none;
+  padding: 10px;
+}
+textarea:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.contactbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #34b7a7;
+  width: 200px;
+  margin: 20px auto 0 auto;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 20px;
+}
+.contactbtn:hover {
+  background: #78afa9;
+}
+.contactbtn:focus {
+  border: none;
+  outline: none;
+}
+
+.error p {
+  text-align: center;
+  padding: 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+}
