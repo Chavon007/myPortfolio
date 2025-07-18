@@ -16,6 +16,7 @@
 }
 
 #home-image {
+  margin-top: 50px;
   border-radius: 50%;
   border: 6px solid #e0e0e0;
 }
@@ -65,4 +66,32 @@
 }
 .home-writeup a:hover {
   background: #78afa9;
+}
+@media (max-width: 600px) {
+  .home {
+    height: 109vh;
+  }
+  .home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-writeup {
+    width: 180%;
+    margin-top: 20px;
+    /* background: red; */
+  }
+  .home-writeup .typewriter-text {
+    /* background: red; */
+    max-width: 400px;
+    font-size: 25px;
+  }
+  .home-writeup .brief{
+    font-size: 15px;
+  }
+  .home-writeup .mainBrief{
+    font-size: 13px;
+    text-align: center;
+  }
 }

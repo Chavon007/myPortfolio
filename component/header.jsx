@@ -1,6 +1,7 @@
 "use client";
 
-
+import { IoClose } from "react-icons/io5";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { FaFacebookF } from "react-icons/fa";
@@ -8,21 +9,26 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import { useState } from "react";
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
   const pathname = usePathname();
   return (
     <div className="container">
       <div className="header">
         <div className="nav">
           <div className="nav-header">
-            <h2>Chavon</h2>
+            <Link href="/">Chavon</Link>
           </div>
 
-          <div className="navbar">
+          <div className="hamburger" onClick={toggleMenu}>
+            {menuOpen ? <IoClose size={24} /> : <RxHamburgerMenu size={24} />}
+          </div>
+          <div className={`navbar ${menuOpen ? "show" : "hide"}`}>
             <ul>
               <li>
-                <Link href="/">
-                  {" "}
+                <Link href="/" onClick={() => setMenuOpen(false)}>
                   <span
                     className={`${
                       pathname === "/" ? "text-[#34b7a7]" : "text-[#5d5d5c]"
@@ -33,7 +39,7 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/about">
+                <Link href="/about" onClick={() => setMenuOpen(false)}>
                   <span
                     className={`${
                       pathname.startsWith("/about")
@@ -46,7 +52,7 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/resume">
+                <Link href="/resume" onClick={() => setMenuOpen(false)}>
                   <span
                     className={`${
                       pathname.startsWith("/resume")
@@ -60,7 +66,7 @@ function Header() {
               </li>
 
               <li>
-                <Link href="/project">
+                <Link href="/project" onClick={() => setMenuOpen()}>
                   <span
                     className={`${
                       pathname.startsWith("/project")
@@ -73,7 +79,7 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact">
+                <Link href="/contact" onClick={() => setMenuOpen(false)}>
                   <span
                     className={`${
                       pathname.startsWith("/contact")

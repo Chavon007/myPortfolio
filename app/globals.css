@@ -21,8 +21,7 @@
   font-weight: bold;
   font-size: 25px;
   font-style: normal;
-
-  color: #5d5d5c;
+  color: #34b7a7;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .navbar ul {
@@ -30,6 +29,9 @@
   justify-content: center;
   text-align: center;
   width: 500px;
+}
+.hamburger {
+  display: none;
 }
 .navbar ul li {
   padding: 20px;
@@ -91,4 +93,42 @@
   font-family: "poppins", sans-serif;
   color: #5d5d5c;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 600px) {
+  .nav {
+    padding: 10px;
+    position: relative;
+  }
+  .nav-header a {
+    font-size: 20px;
+  }
+  .nav-socials {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    color: #34b7a7;
+  }
+  .navbar.show {
+    display: flex;
+    flex-direction: column;
+
+    top: 3rem;
+    right: 0;
+    background: #e9e8e6;
+    width: 100%;
+    height: 50vh;
+    position: fixed;
+  }
+  .navbar.show ul {
+    flex-direction: column;
+    list-style: none;
+    align-self: center;
+  }
+  .footer {
+    /* margin-top: 30px; */
+  }
 }
