@@ -28,3 +28,14 @@
 .links h3 span:hover {
   color: #8edad1;
 }
+@media (max-width: 600px) {
+ 
+  
+  .links h3 span {
+    width: 80%;
+    
+    font-size: 15px;
+    text-align: center;
+    
+  }
+}

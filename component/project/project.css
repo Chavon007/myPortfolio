@@ -32,3 +32,11 @@
 .mainprojectcard {
   margin-top: 40px;
 }
+@media (max-width: 600px) {
+  .project-content-header h2 {
+    font-size: 25px;
+  }
+  .project-content-header p {
+    font-size: 13px;
+  }
+}

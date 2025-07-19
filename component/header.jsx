@@ -66,7 +66,7 @@ function Header() {
               </li>
 
               <li>
-                <Link href="/project" onClick={() => setMenuOpen()}>
+                <Link href="/project" onClick={() => setMenuOpen(false)}>
                   <span
                     className={`${
                       pathname.startsWith("/project")

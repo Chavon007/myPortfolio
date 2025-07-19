@@ -65,3 +65,37 @@
 .card .link a:hover {
   background: #78afa9;
 }
+@media (max-width: 600px) {
+  .projectcard {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 30px;
+    height: auto;
+  }
+  .card {
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .card img {
+    height: 150px !important;
+  }
+  .card h2 {
+    font-size: 15px;
+  }
+  .card h6{
+    font-size: 12px;
+    margin-top: 5px;
+  }
+   .card p{
+    font-size: 15px;
+    margin-top: 5px;
+   }
+   .card p span{
+    font-size: 11px;
+   }
+   
+   .card .link a{
+    font-size: 11px;
+    width: 80px;
+   }
+}

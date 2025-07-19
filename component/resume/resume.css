@@ -143,3 +143,80 @@
 .resumebtn:hover {
   background: #78afa9;
 }
+@media (max-width: 600px) {
+  .resumecontentheader h3 {
+    font-size: 25px;
+  }
+  .resumebody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .firstresume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .education h2 {
+    text-align: center;
+    font-size: 15px;
+  }
+  .education h5 {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+  }
+  .education h5 strong {
+    font-size: 12px;
+  }
+  .education p {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .cert {
+    /* background: red; */
+    margin-top: 15px;
+  }
+  .cert h2 {
+    text-align: center;
+    font-size: 15px;
+  }
+  .cert h5 {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+  }
+  .cert h5 strong {
+    font-size: 12px;
+  }
+  .cert p {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .prof {
+    width: 100%;
+    margin-top: -15px;
+  }
+  .prof h2 {
+    text-align: center;
+    font-size: 15px;
+  }
+  .prof h5 {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+  }
+  .prof h6 {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .prof p {
+    font-size: 10px;
+    padding-top: 15px;
+  }
+}
